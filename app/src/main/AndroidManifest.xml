@@ -11,9 +11,15 @@
         android:theme="@style/Theme.Astronomy">
         <activity
             android:name=".view.AstroDetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:launchMode="singleTop" />
         <activity
             android:name=".view.ListAstronomyActivity"
+            android:exported="true"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="true"></activity>
     </application>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
